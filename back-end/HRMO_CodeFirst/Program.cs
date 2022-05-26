@@ -30,6 +30,10 @@ builder.Services.AddControllersWithViews()
 
 builder.Services.AddSingleton<ILocationServices,LocationServices>();
 builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddSingleton<ILoginService, LoginService>();
+builder.Services.AddSingleton<IAccountService,AccountService>();
+builder.Services.AddSingleton<IJobTitleServices, JobTitleServices>();
+builder.Services.AddSingleton<ITimeSheetsService, TimeSheetsService>();
 
 var app = builder.Build();
 

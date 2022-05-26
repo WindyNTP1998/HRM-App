@@ -1,7 +1,8 @@
-namespace HRMO_CodeFirst.Data
+namespace HRMO_CodeFirst.Data.UserModels
 {
-    public class CreateUserModel
+    public class UserModel
     {
+        public string Location { get; set; }
         public string Manv { get; set; }
         public string Mapb { get; set; } = null!;
         public string Macv { get; set; } = null!;
