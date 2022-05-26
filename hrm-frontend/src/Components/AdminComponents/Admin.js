@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
+import './Admin.css';
+import Sidebar from './sidebar/Sidebar';
 
 export default function Admin() {
 	const navigate = useNavigate();
@@ -14,8 +16,9 @@ export default function Admin() {
 	}, []);
 
 	return (
-		<div>
-			<h1>Admin Page</h1>
+		<div className="container">
+			<Sidebar />
+			<Outlet />
 		</div>
 	);
 }

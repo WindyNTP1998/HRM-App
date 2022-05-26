@@ -1,0 +1,9 @@
+.container {
+	max-width: 100%;
+	display: flex;
+}
+.others {
+	max-width: 100%;
+	flex: 4;
+	background-color: yellow;
+}

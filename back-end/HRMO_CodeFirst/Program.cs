@@ -29,6 +29,7 @@ builder.Services.AddControllersWithViews()
     .AddNewtonsoftJson(option => option.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
 builder.Services.AddSingleton<ILocationServices,LocationServices>();
+builder.Services.AddSingleton<IUserService, UserService>();
 
 var app = builder.Build();
 
